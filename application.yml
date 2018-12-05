@@ -1,0 +1,24 @@
+server:
+  port: 8090
+
+management:
+  security:
+    enabled: false    
+
+promotion: action
+
+spring:
+  application:
+    name: awesome-media-localhost
+  datasource:
+    initialize: true
+    driver-class-name: org.h2.Driver
+    platform: h2
+    url: jdbc:h2:mem:mediadb;
+    username: sa
+    password: null
+  h2:
+    console:
+      enabled: true
+      
+      
